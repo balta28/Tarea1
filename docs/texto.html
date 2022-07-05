@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="unnamed.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tipos de Documentos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="head.png" alt="" width="10%">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html"><span class="fa fa-home"></span> Inicio</a>
+                </li>
+                <li>
+                    <a href="texto.html">
+                        <i class="fa-brands fa-css3-alt"></i> Tipos de documentos</a>
+                </li>
+                <li>
+                    <a href="sintaxis.html"><i class="fa-brands fa-css3-alt"></i> Sintaxis HTML</a>
+                </li>
+               
+                <li>
+                    <a href="#contacto"><span class="fa fa-user"></span> Contactame</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Tipos de Documentos HTML</h1>
+            <article>
+
+                <p class="letracapital">
+                    Lo primero que tiene que hacer un documento HTML es definir su DOCTYPE o tipo de documento HTLM que
+                    es. Para ello la W3C ha definido una serie de tipos de documentos.
+
+                    La declaración del DOCTYPE tiene que ser la primera línea de nuestro documento HTML.
+
+                    En el caso de que no indiquemos el DOCTYPE del documento el navegador interpretará el documento como
+                    quirks o modo de compatibilidad. Buscando que el contenido de la página pueda ser visualizado.
+
+                    <img src="html.png" alt="" width="10%" title="HTML">
+                </p>
+                <p>Algunos de los tipos de DOCTYPE que define la W3C son:</p>
+                <ul class="lista">
+                    <li>HTML 4.01 transitorio</li>
+                    <li>HTML 4.01 frameset</li>
+                    <li>HTML Estricto</li>
+                    <li>HTML5</li>
+                </ul>
+
+
+                <h2>HTML 4.01 Estricto</h2>
+                <p>
+                    Implica que el documento que generemos tiene que ser compatible con la definición del estándar HTML
+                    4.01. Es por ello que todos los elementos que utilicemos en el documento tienes que estar dentro de
+                    la definición.
+
+                    Este modo es interpretado correctamente por todos los navegadores y es compatible con el estándar
+                    CSS. Además que conseguiremos tener documentos accesibles.
+
+                    Aunque no contempla las reglas del estándar XHTML sobre anidación, escritura,… es un punto sencillo
+
+                    para hacer una migración hacia XHTML.<br />
+                    La cabecera que utilizaremos en estos casos será:
+                </p>
+                <p>
+                    DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd"
+                </p>
+            </article>
+            <article>
+                <h2>HTML 4.01 Transitorio</h2>
+                <p class="letracapital">
+                    El nombre de transitorio le viene porque no llega a ser un documento 100% estricto, pero está en
+                    camino o en transición a conseguirlo.
+
+                    De igual manera que en el modo estricto los elementos deben de ser de la especificación HTML 4.01,
+                    si bien se permiten elementos que estén obsoletos o deprecados.
+
+                    La cabecera que utilizaremos en estos casos será:
+                </p>
+                <p>
+                    DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
+                </p>
+                <h2>HTML 4.01 Frameset</h2>
+                <p>
+                    En el caso de que nuestra página esté compuesta por frames deberemos de utilizar un tipo de DOCTYPE
+                    frameset.
+
+                    La cabecera que utilicemos en estos casos será:
+                </p>
+                <p>
+                    DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+                    "http://www.w3.org/TR/html4/frameset.dtd"
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>HTML 5</h2>
+                <p>
+                    En HTML5 han dado un giro a la cabecera ya que han visto que era demasiado compleja para los
+                    desarrolladores. Así que lo han reducido a la máxima expresión.
+
+                    La cabecera que utilizaremos en los documentos HTML5 será:
+                </p>
+                <p>
+                    DOCTYPE html
+                </p>
+            </article>
+
+        </section>
+        <section class="video">
+            <h1>Curso Basico HTML</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XqFR2lqBYPs" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </section>
+        <footer id="contacto">
+            <h3>Datos del Propietario</h3>
+            <a href="#"><i class="fa-brands fa-buffer"></i>Mesias Baltazar Cornejo Urrutia</a>
+            <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="https://github.com/balta28/multimedia"><i class="fa-brands fa-github"></i>Github</a>
+            <a href="#"><i class="fa-brands fa-digital-ocean"></i>Correo: mesias.cornejo21@itca.edu.sv</a>
+        </footer>
+    </main>
+</body>
+
+</html>
